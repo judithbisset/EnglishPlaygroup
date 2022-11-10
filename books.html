@@ -7,25 +7,71 @@
     <title>Document</title>
 </head>
 <style>
-    table, tr, td {
-  border: 1px solid black;
+    h2{
+        text-align: center;
+    }
+   
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    margin-left: auto; 
+  margin-right: auto;
+}
+
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: thin solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: thin solid #009879;
 }
 </style>
 <body>
-    <table>
+    <h2>
+        English Books available at Playgroup
+    </h2>
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+            </tr>
+        </thead>
         <tr>
             <td>The Wonky Donkey</td>
+            <td>Craig Smith</td>
             </tr>
             <tr>
                 <td>Aroha's Way</td>
+                <td>Craig Philipps</td>
                 </tr>
                 <tr>
-                    <td>I need a new bum</td></tr>
+                    <td>I need a new bum</td>
+                    <td>Dawn MacMillan</td>
+                </tr>
                     <tr>
-                        <td>Ye cannae shove yer grannie</td>
+                        <td>Ye Cannae Shove Yer Granny Off A Bus</td>
+                        <td>Kathryn Selbert</td>
+                       
                     </tr>
                     <tr>
                         <td>Hairy Maclary's bone</td>
+                        <td>Lynley Dodd</td>
                     </tr>
                 
     </table>
