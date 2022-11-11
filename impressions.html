@@ -42,16 +42,16 @@ background-size: 22px 22px;
         margin: 20px 20px 20px 20px;
         
     }
-    .images{
-        text-align: center;
-        padding-bottom: 30px;
-    }
+    
     h1 {
         text-align: center;
         background-color: white;
         border-radius: 30px;
         
     }
+    
+
+
 </style>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -93,14 +93,29 @@ background-size: 22px 22px;
             </div>
         </div>
     </nav>
-    <h1>Photos</h1>
-    <div class="images">
-    <img src="playgroup1.jpg">
-    <img src="playgroup2.jpg">
-    <br>
-    <img src="playgroup3.jpg">
-    <img src="playgroup4.jpg">
-</div>
+   
+    <div class="image-container">
+        <div class="image" style="--clip-start: ellipse(0 0 at 0 0); --clip-end: ellipse(150% 150% at 0 0);"><img
+                src="playgroup1.jpg" /><img
+                src="playgroup1.jpg" /></div>
+        <div class="image" style="--clip-start: inset(100% 0 0 0); --clip-end: inset(0 0 0 0);"><img
+                src="playgroup2.jpg" /><img
+                src="playgroup2.jpg" /></div>
+        <div class="image" style="--clip-start: ellipse(0 0 at 100% 0); --clip-end: ellipse(150% 150% at 100% 0);"><img
+                src="playgroup3.jpg" /><img
+                src="playgroup3.jpg" /></div>
+        <div class="image"
+            style="--clip-start: polygon(50% 50%,  50% 50%,  50% 50%, 50% 50%); --clip-end: polygon(-50% 50%, 50% -50%, 150% 50%, 50% 150%);">
+            <img src="playgroup4.jpg" /><img
+                src="playgroup4.jpg" /></div>
+        <div class="image" style="--clip-start: circle(0); --clip-end: circle(125%);"><img
+                src="playgroup5.jpg" /><img
+                src="playgroup5.jpg" /></div>
+        <div class="image" style="--clip-start: inset(100% 100% 100% 100%); --clip-end: inset(0 0 0 0);"><img
+                src="playgroup6.jpg" /><img
+                src="playgroup6.jpg" /></div>
+
+    </div>
 </body>
 
 </html>
