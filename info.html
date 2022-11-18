@@ -28,15 +28,25 @@ background-image: linear-gradient(0deg, #e5e5f7 50%, #1b41eb 50%);
 background-size: 22px 22px;
     }
     
-    
+
 
 .info {
     background-color: #e5e5f7;
     font-size: 20px;
     font-weight: 200;
-    padding-top: 100px;
-    max-width: 600px;
-    
+}
+ul, p {
+  font-size: 1.5rem;
+}
+ul {
+list-style-type: upper-roman;
+  list-style-position: inside;
+}
+
+li,
+p {
+  line-height: 1.5;
+  text-align: justify;
 }
 li a:hover {
   background-color: #1b41eb;
@@ -89,9 +99,13 @@ li a:hover {
             </div>
         </div>
     </nav>
-    <div class="info">
+    <div class="container">
+        <div class="row">
+
+    <div class="info col-12 text-center">
+        <h1>What we do</h1>
     <p>The group meets <span class="meeting-time">every Wednesday from 2.30pm to 4.30pm</span> at the Stadtteiltreff Höttinger Au. The aims of the group are simple:</p>
-    
+    <ul>
     <li>to offer a wide range of toys, puzzles, books, sensory tunnels, songs etc to kids aged 0-6, whilst giving children the
     opportunity to interact and form new friendships in English.</li>
     <br>
@@ -99,10 +113,13 @@ li a:hover {
     have a cup of coffee(donation based).</li>
     <br>
     <li>to embrace Circle Time and celebrate Anglophone festivals like Halloween, St Patrick’s Day, Holi etc</li>
+    </ul>
     <br>
     <p>Note: While this group was originally created for families where English is one of the home languages, <span class="english">you don’t need to
     be English speakers</span> to attend. Everyone is welcome.</p>
     </div>
+    </div>
+</div>
 
 </body>
 </html>
