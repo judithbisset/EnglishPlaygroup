@@ -24,6 +24,15 @@
         font-family: 'Courier New', monospace;
 
     }
+    h1 {
+        text-align: center;
+        background-color: white;
+        border-radius: 30px;
+        margin-top: 20px;
+        font-size: 28px;
+        font-weight: bold;
+        
+    }
     
     .hero-picture{
         background-image: url("innsbruck.JPG");
@@ -41,7 +50,10 @@
 padding-right: 20px;
     }
     
-  
+     .img-fluid {
+  max-width: 100%;
+  height: auto;
+}
     
     ul {
   list-style-type: none;
@@ -71,7 +83,10 @@ li a:hover {
   background-color: #1b41eb;
 }
 .logo {
-    margin: 30px 10px 10px 10px;
+    text-align: left;
+    height:300px; 
+    border-radius: 30%; 
+    border: 10px solid #1b41eb;
 }
 
 
@@ -122,7 +137,7 @@ li a:hover {
 <div class="hero-picture">
     <div class="hero-text">
         <h1>English Playgroup Innsbruck</h1>
-        <img class="logo" src="logo.jpg" style="height:300px; border-radius: 30%; border: 10px solid #1b41eb;"
+        <img class="logo img-fluid" src="logo.jpg"
             alt="This is a small image of our lioness mascot.">
     
 </div>
